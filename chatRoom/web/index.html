@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网络会议</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner">
+			<h1>网络会议</h1>
+			<span id="status">x人在线</span>
+		</div>
+		<div id="history_msg">
+		</div>
+		<div class="send_msg">
+			<textarea type="text" id="msg"></textarea>
+			<button id="send">发送</button>
+		</div>
+	</div>
+	<div id="enter_wrapper">
+		<p id="info">正在连接服务器...</p>
+		<div id="login_wrapper">
+			<input type="text" id="user" placeholder="请输入昵称">
+			<input type="button" id="login_btn" value="登录">
+		</div>
+		
+	</div>
+</body>
+</html>
